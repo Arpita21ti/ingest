@@ -1,0 +1,27 @@
+# Ignore .env file (sensitive configuration)
+.env
+tnp-rgpv-1a0cd76fe8ec.json
+
+# Ignore Air configuration file (for live reloads)
+.air.toml
+
+# Ignore generated or temporary files
+*.log
+*.out
+*.exe
+*.tar
+
+# Ignore binary files built by Go (e.g., after you run `go build`)
+/bin/
+/build/
+/tmp
+
+# Ignore Go coverage reports
+*.out
+
+# Ignore IDE/editor-specific files
+.idea/
+.vscode/
+
+# Ignore test coverage or result files
+coverage/

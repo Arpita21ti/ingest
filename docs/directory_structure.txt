@@ -1,0 +1,43 @@
+TNP_RGPV_SERVER/
+│   ├── config/       
+│   │   ├── environment_variables.go
+│   │   ├── mongo_database.go    
+│   │   └── queriespostgresSQL_database.go
+│   ├── controllers/
+│   │   ├── student_auth_controller.go      
+│   │   └── student_login_creds_reset_controller.go        
+│   ├── docs/    
+│   │   └── directory_structure.txt        
+│   ├── middlewares/ 
+│   │   └── auth.go           
+│   ├── models/      
+│   │   ├── question_bank/
+│   │   │   │   ├── base_question.go
+│   │   │   │   ├── fill_in_blanks_question.go
+│   │   │   │   ├── mcq_question.go
+│   │   │   │   ├── text_question.go
+│   │   │   │   └── true_false_question.go
+│   │   └── student/ 
+│   │   │   │   ├── student_certifications_and_resume.go
+│   │   │   │   ├── student_college_academics.go
+│   │   │   │   ├── student_forget_password_request.go
+│   │   │   │   ├── student_login_credentials.go
+│   │   │   │   ├── student_password_reset_storage.go
+│   │   │   │   ├── student_profile.go
+│   │   │   │   ├── student_reset_password_request.go
+│   │   │   │   └── student_sign_up.go
+│   ├── routes/   
+│   │   ├── register.go   
+│   │   ├── student_auth_credentials_reset.go
+│   │   └── student_auth.go 
+│   ├── utils/    
+│   │   ├── auth_cred_reset_email_sender.go
+│   │   └── jwt_management.go
+│   ├── validators/    
+│   │   ├── password_reset_validators.go
+│   │   └── sign_up_validators.go
+│   ├── .env            
+│   ├── .gitignore            
+│   ├── main.go   
+│   ├── go.mod      
+│   └── go.sum  

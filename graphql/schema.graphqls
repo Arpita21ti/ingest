@@ -1,0 +1,20 @@
+type LeaderboardRecord {
+  leaderboardRecordID: ID!
+  rank: Int!
+  score: Float!
+  domain: String!
+  subDomain: String!
+  timePeriod: String!
+  lastUpdated: String!
+}
+
+type Query {
+  getLeaderboard: [LeaderboardRecord!]!
+  getLeaderboardByID(id: ID!): LeaderboardRecord
+}
+
+type Mutation {
+  addLeaderboard(rank: Int!, score: Float!, domain: String!, subDomain: String!, timePeriod: String!): LeaderboardRecord!
+  updateLeaderboard(id: ID!, rank: Int, score: Float, domain: String, subDomain: String, timePeriod: String): LeaderboardRecord!
+  deleteLeaderboard(id: ID!): Boolean!
+}
